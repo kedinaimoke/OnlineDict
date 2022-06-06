@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>My Dictionary</title>
+    <title>Jane's Dictionary</title>
 </head>
 <body style="background-color: black;">
 
@@ -22,8 +22,8 @@
         <form action="{% url 'index' %}" method="post">
             {% csrf_token %}
             <input type="text" class="form-control" name="word" id="exampleFormControlInput1"
-                   placeholder="Search Word..."><br>
-            <input type="submit" name="" class="btn btn-success" value="Search">
+                   placeholder="Type a word..."><br>
+            <input type="submit" name="" class="btn btn-success" value="Find meaning">
         </form>
     </div>
     <hr>
